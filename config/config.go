@@ -13,6 +13,6 @@ func DBInit() *gorm.DB {
 		panic(err)
 	}
 
-	db.AutoMigrate(structs.User{}, structs.VotingList{}, structs.VotingListItem{})
+	db.AutoMigrate(structs.User{}, structs.VotingList{}, structs.VotingListItem{}, structs.UserVote{})
 	return db
 }
