@@ -164,3 +164,35 @@ Request Method  : DELETE
     "status": 200
 }
 ```
+
+
+###### Vote User
+
+> Request 
+
+URL             : http://url/user/:id
+Request Method  : DELETE
+
+```json
+{
+	"UserID":2,
+	"VotingListID":0
+}
+```
+
+> Response
+
+```json
+{
+    "data": {
+        "ID": 1,
+        "CreatedAt": "2019-10-24T22:20:28.1888272+07:00",
+        "UpdatedAt": "2019-10-24T22:20:28.1888272+07:00",
+        "DeletedAt": null,
+        "UserID": 2,
+        "VotingListID": 0
+    },
+    "message": "Voting Success",
+    "status": 200
+}
+```
