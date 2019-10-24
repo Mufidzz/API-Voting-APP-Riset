@@ -15,6 +15,13 @@ type User struct {
 	Password  string `gorm:"type:text"`
 }
 
+type UserVote struct {
+	gorm.Model
+
+	UserID       uint
+	VotingListID uint
+}
+
 type VotingList struct {
 	gorm.Model
 
@@ -29,5 +36,4 @@ type VotingListItem struct {
 	Parent      uint
 	Title       string `gorm:"type:varchar(60)"`
 	Description string `gorm:"type:text"`
-	Voters      int
 }
