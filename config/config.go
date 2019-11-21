@@ -7,7 +7,7 @@ import (
 )
 
 func DBInit() *gorm.DB {
-	db, err := gorm.Open("mysql", "root:@(127.0.0.1:3306)/riset_api?parseTime=true&loc=Local")
+	db, err := gorm.Open("mysql", "riset-api:rapi99@(127.0.0.1:3306)/riset_api?parseTime=true&loc=Local")
 
 	if err != nil {
 		panic(err)
