@@ -40,7 +40,7 @@ func main() {
 		votingListItem.DELETE("/:id", inDB.DeleteVotingListItem)
 	}
 
-	err := router.Run(":7080")
+	err := router.Run(":9151")
 
 	if err != nil {
 		panic("Error when running router")
